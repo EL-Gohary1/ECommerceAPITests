@@ -1,7 +1,6 @@
 package com.mahmoudelgohary.ecommerce.util;
 
 import com.github.javafaker.Faker;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -37,8 +36,8 @@ public class TestDataHelper {
     }
 
     // Method to generate a random number
-    public static int generateRandomNumber(int min, int max) {
-        return FAKER.number().numberBetween(min, max);
+    public static long generateRandomNumber() {
+        return FAKER.number().randomNumber();
     }
 
     // Method to generate a date in the future
