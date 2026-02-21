@@ -2,10 +2,10 @@ package com.mahmoudelgohary.ecommerce.pojo.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 
 @AllArgsConstructor
-@Getter
+@Data
 public class RegisterRequest{
 
 	@JsonProperty("firstName")
